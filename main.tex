@@ -236,6 +236,7 @@ How to determine the “best” ngrams? Max-marginals.
         \item max-marginal takes $<1\%$ total time
     \end{itemize}
 \end{itemize}
+\begin{overlayarea}{\textwidth}{4cm}
 \begin{center}
      \only<3->{
      \begin{figure}
@@ -246,6 +247,7 @@ How to determine the “best” ngrams? Max-marginals.
 \end{figure}
      }
 \end{center}
+\end{overlayarea}
 \end{frame}
 
 \begin{frame}
@@ -364,7 +366,7 @@ How to determine the “best” ngrams? Max-marginals.
     \item<3-> Training: reset the hidden state every $M$ words
     \item<5-> Test: a single Markov transformer can be used as any $m<M$ order model
 \end{itemize}
-
+\begin{overlayarea}{\textwidth}{6.5cm}
 \begin{columns}
 \begin{column}{0.68\textwidth}
 \centering
@@ -375,7 +377,7 @@ How to determine the “best” ngrams? Max-marginals.
 \only<6->{\includegraphics[width=\textwidth]{img/markov_cascade_new.pdf}}
 \end{column}
 \end{columns}
-
+\end{overlayarea}
 \end{frame}
 
 \begin{frame}
@@ -441,9 +443,11 @@ How to determine the “best” ngrams? Max-marginals.
     \item<1-> Beam search only scores $KL$ full sequences
     \item<2-> Cascaded Search can score exponential number of sequences
 \end{itemize}
+\begin{overlayarea}{\textwidth}{6cm}
 \begin{center}
-    \only<3->{\includegraphics[width=0.7\textwidth]{img/count_paper_nogt_latest.png}}
+    \only<3->{\includegraphics[width=0.6\textwidth]{img/count_paper_nogt_latest.png}}
 \end{center}
+\end{overlayarea}
 \end{frame}
 
 \begin{frame}
